@@ -61,7 +61,7 @@ body {
 /* component styles */
 /* header style */
 header {
-  background-color: var(--darkblue-01)
+  background-color: var(--darkblue-01);
 }
 
 .logo {
@@ -130,9 +130,9 @@ header {
   height: fit-content;
 }
 
-.star{
+.star {
   color: var(--allert-yellow);
-  font-size: 30px
+  font-size: 30px;
 }
 
 .testimonial .item {
@@ -167,9 +167,10 @@ header {
   width: fit-content;
 }
 
-@media (max-width: 768px) {
-  .hero-left{
-    height: 200px
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .hero-left {
+    height: 200px;
   }
 
   .whyus .card {
@@ -179,5 +180,33 @@ header {
   .cta-banner {
     width: 100%;
     padding: 150px 15px 50px 15px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .example {
+    background: green;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {
+    background: blue;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {
+    background: orange;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {
+    background: pink;
   }
 }
