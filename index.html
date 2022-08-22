@@ -34,10 +34,10 @@
 
 <body>
   <!-- header nav & logo -->
-  <header class="container-fluid sticky-top " id="header">
+  <header class="container-fluid sticky-top high-shadow p-0" id="header">
     <!-- header navigation -->
     <nav class="navbar navbar-expand-lg">
-      <div class="container-lg p-0">
+      <div class="container-lg px-2">
         <a class="navbar-bran low-shadow" href="#">
           <span class="logo d-block"></span>
         </a>
@@ -84,11 +84,11 @@
   </header>
   <!-- end of header nav & logo -->
   <!-- end of hero section -->
-  <main class="hero container-fluid p-0 pt-5 mb-5" id="hero">
-    <div class="hero-row container-fluid row m-auto p-0">
-      <div class="hero-left ms-auto col-lg-5 d-flex flex-column justify-content-center ">
-        <h1 class="fw-bold">
-          Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)
+  <main class="hero container-fluid pt-5 mb-5 px-2 position-relative" id="hero">
+    <div class="hero-row container-lg row m-auto p-0 " >
+      <div class=" col-md-6 p-0 d-flex flex-column justify-content-center px-2">
+        <h1 class="fw-bold text-capitalize">
+          Sewa & Rental Mobil Terbaik di Kawasan Malang
         </h1>
         <p class="fw-light mr-auto">
           Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas
@@ -99,9 +99,8 @@
           Mulai Sewa Mobil
         </button>
       </div>
-      <div class="col-lg-6 p-0 text-end flex-column mt-auto justify-content-center">
-        <img src="./assets/images/img_car.svg" class="img-fluid" alt="car">
-
+      <div class="hero-right col-md-6 hero-right">
+        <img src="./assets/images/img_car.svg" class="hero-img img-fluid position-absolute " alt="car">
       </div>
     </div>
     </div>
@@ -110,14 +109,15 @@
   <!-- our services section -->
   <section class="services container-fluid pb-5 d-inline pt-5" id="services">
     <!-- row container -->
-    <div class="services-row container-lg row m-auto pt-5">
+    <div class="services-row container-lg row m-auto pt-5 overflow-hidden">
       <!-- service left content -->
-      <div class="col-md-6 text-end d-flex p-0" data-aos="fade-right" data-aos-offset="320" data-aos-delay="1500" data-aos-duration="2000">
+      <div class="col-md-6 d-flex p-0 position-relative" data-aos="fade-right" data-aos-offset="320" data-aos-delay="800" data-aos-duration="2000">
         <!-- scary woman image -->
-        <img src="./assets/images/scary-girl.svg" class="img-fluid ms-auto pe-5" alt="smiling-woman" />
+        <img src="./assets/images/img_service (1).svg" class="services-img1 img-fluid ms-auto pe-5  end-0 top-0" alt="smiling-woman-toping" data-aos="zoom-in" data-aos-offset="320" data-aos-delay="800" data-aos-duration="2000"/>
+        <img src="./assets/images/img_service (2).svg" class="services-img2 img-fluid ms-auto pe-5 position-absolute end-0 top-0" alt="smiling-woman" />
       </div>
       <!-- service right content -->
-      <div class="col-md-6 fw-bold d-flex flex-column justify-content-center p-0" data-aos="fade-left" data-aos-offset="320" data-aos-delay="1500" data-aos-duration="1000">
+      <div class="col-md-6 fw-bold d-flex flex-column justify-content-center p-0 " data-aos="fade-left" data-aos-offset="320" data-aos-delay="800" data-aos-duration="1000">
         <!-- title  -->
         <h3 class="fw-bold">
           Best Car Rental for any kind of trip in (Lokasimu)!
@@ -130,7 +130,7 @@
           meeting, dll.
         </p>
         <!-- list -->
-        <ul class="services-list">
+        <ul class="services-list position-relative" id="services-list">
           <li class="services-list-item fw-light fs-7" data-aos="fade-left" data-aos-delay="1200" data-aos-duration="500">
             <span class="services-list-item_spacer">Sewa Mobil Dengan Supir di Bali 12 Jam</span>
           </li>
@@ -143,7 +143,7 @@
           <li class="services-list-item fw-light fs-7" data-aos="fade-left" data-aos-delay="1900" data-aos-duration="500">
             <span class="services-list-item_spacer">Gratis Antar - Jemput Mobil di Bandara</span>
           </li>
-          <li class="services-list-item fw-light fs-7" data-aos="fade-left" data-aos-offset="135" data-aos-delay="2100"  data-aos-duration="500">
+          <li class="services-list-item fw-light fs-7" data-aos="fade-left" data-aos-offset="170" data-aos-delay="2100"  data-aos-duration="500">
             <span class="services-list-item_spacer">Layanan Airport Transfer / Drop In Out</span>
           </li>
         </ul>
@@ -368,11 +368,11 @@
         </div>
         <div class="col-md">
           <p>Connect with us</p>
-          <a href="https://www.facebook.com"><img src="./assets/icon/icon_facebook.svg" alt="Facebook"> </a>
-          <a href="https://www.instagram.com"><img src="./assets/icon/icon_instagram.svg" alt="Instagram"></a>
-          <a href="https://www.Twitter.com"><img src="./assets/icon/icon_twitter.svg" alt="Twitter"></a>
-          <a href="https://www.gmail.com"><img src="./assets/icon/icon_mail.svg" alt="Mail"></a>
-          <a href="https://www.twitch.com"><img src="./assets/icon/icon_twitch.svg" alt="Twitch"></a>
+          <a href="https://www.facebook.com"><img src="./assets/icon/icon_facebook.svg" class="mx-" alt="Facebook"> </a>
+          <a href="https://www.instagram.com"><img src="./assets/icon/icon_instagram.svg" class="mx-" alt="Instagram"></a>
+          <a href="https://www.Twitter.com"><img src="./assets/icon/icon_twitter.svg" class="mx-" alt="Twitter"></a>
+          <a href="https://www.gmail.com"><img src="./assets/icon/icon_mail.svg" class="mx-" alt="Mail"></a>
+          <a href="https://www.twitch.com"><img src="./assets/icon/icon_twitch.svg" class="mx-" alt="Twitch"></a>
         </div>
         <div class="col-md">
           <p>Copyright Binar 2022</p>
