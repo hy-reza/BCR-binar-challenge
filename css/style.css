@@ -209,17 +209,22 @@ header {
   .hero-right {
     height: 350px;
   }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .offcanvas {
+    width: 30%;
+  }
+
   .hero-img {
     right: 0;
     bottom: 0;
     width: 450px;
   }
 
-  .hero-left{
+  .hero-left {
     width: 350px;
     margin-bottom: 50px;
   }
@@ -237,7 +242,7 @@ header {
     height: 450px;
   }
 
-  .hero-left{
+  .hero-left {
     width: 50%;
   }
 }
