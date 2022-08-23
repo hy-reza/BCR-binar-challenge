@@ -78,6 +78,7 @@ header {
 /* hero section style */
 .hero {
   background-color: var(--darkblue-01);
+
   width: 100%;
   height: fit-content;
 }
@@ -95,6 +96,11 @@ header {
 
 .hero-right {
   height: 475px;
+}
+
+.hero-left {
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .btn-cta {
@@ -182,11 +188,10 @@ header {
   width: fit-content;
 }
 
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .hero-left {
-    height: 200px;
+  .hero-right {
+    height: 295px;
   }
 
   .whyus .card {
@@ -201,28 +206,53 @@ header {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .example {
-    background: green;
+  .hero-right {
+    height: 350px;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .example {
-    background: blue;
+  .hero-img {
+    right: 0;
+    bottom: 0;
+    width: 450px;
+  }
+
+  .hero-left{
+    width: 350px;
+    margin-bottom: 50px;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .example {
-    background: orange;
+  .hero-img {
+    right: 0;
+    bottom: 0;
+    width: 530px;
+  }
+
+  .hero-right {
+    height: 450px;
+  }
+
+  .hero-left{
+    width: 50%;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .example {
-    background: pink;
+@media only screen and (min-width: 1400px) {
+  .hero-img {
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    width: 704px;
+  }
+
+  .hero-right {
+    height: 500px;
   }
 }
