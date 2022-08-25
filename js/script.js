@@ -10,7 +10,7 @@ $(".owl-carousel").owlCarousel({
     nav: false,
     // autoplay
     autoplay:true,
-    paginationSpeed: 300,
+    paginationSpeed: 500,
     autoplayTimeout:3000,
     autoplayHoverPause:true,
     // dots button false / tidak ditampilkan

@@ -10,8 +10,6 @@
 
   <!-- STYLESHEET -->
 
-
-
   <!-- bootstrap css -->
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
   <!-- end of bootstrap css -->
@@ -34,6 +32,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- end of aos animation css-->
 
+  <!-- END OF STYLESHEET -->
 </head>
 
 <body>
@@ -115,7 +114,7 @@
     <!-- row container -->
     <div class="services-row container-lg row m-auto pt-5 overflow-hidden">
       <!-- service left content -->
-      <div class="col-md-6 d-flex p-0 position-relative" data-aos="fade-right" data-aos-offset="320" data-aos-delay="800" data-aos-duration="2000">
+      <div class="col-md-6 d-flex p-0 position-relative mb-5" data-aos="fade-right" data-aos-offset="320" data-aos-delay="800" data-aos-duration="2000">
         <!-- scary woman image -->
         <img src="./assets/images/img_service (1).svg" class="services-img1 img-fluid ms-auto pe-5  end-0 top-0" alt="smiling-woman-toping" data-aos="zoom-in" data-aos-offset="320" data-aos-delay="800" data-aos-duration="2000"/>
         <img src="./assets/images/img_service (2).svg" class="services-img2 img-fluid ms-auto pe-5 position-absolute end-0 top-0" alt="smiling-woman" />
@@ -159,32 +158,35 @@
     <div class="container-lg pt-5">
       <h2 class="fs-3 fw-bold pt-5">Why Us?</h2>
       <p>Mengapa harus pilih Binar Car Rental?</p>
-      <div class="row px-3 g-5 d-flex justify-content-between " >
-        <div class="col-md-4 card low-shadow " data-aos="flip-left" data-aos-delay="100" data-aos-offset="300">
-          <div class="card-body">
-            <img src="./assets/icon/icon_complete.svg" />
+      <div class="whyus-row row g-5 d-flex justify-content-between " >
+        
+        <div class="col-md-4 card low-shadow p-0" data-aos="flip-left" data-aos-delay="100" data-aos-offset="300">
+          <div class="card-body card-body_yellow">
+            <img class="card-img" src="./assets/icon/icon_complete.svg" />
             <h5 class="card-title fw-bold pt-3 pb-2">Mobil Lengkap</h5>
             <p class="card-text">Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
           </div>
-        </div>
-        <div class="col-md-4 card low-shadow " data-aos="flip-left" data-aos-delay="300" data-aos-offset="300">
-          <div class="card-body">
-            <img src="./assets/icon/icon_price.svg" />
+        </div>   
+        
+        <div class="col-md-4 card low-shadow p-0" data-aos="flip-left" data-aos-delay="300" data-aos-offset="300">
+          <div class="card-body card-body_red">
+            <img class="card-img" src="./assets/icon/icon_price.svg" />
             <h5 class="card-title fw-bold pt-3 pb-2">Harga Murah</h5>
             <p class="card-text">Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain</p>
           </div>
         </div>
-        <div class="col-md-4 card low-shadow " data-aos="flip-left" data-aos-delay="500" data-aos-offset="300">
-          <div class="card-body">
-            <img src="./assets/icon/icon_24hrs.svg" />
+
+        <div class="col-md-4 card low-shadow p-0" data-aos="flip-left" data-aos-delay="500" data-aos-offset="300">
+          <div class="card-body card-body_blue">
+            <img class="card-img" src="./assets/icon/icon_24hrs.svg" />
             <h5 class="card-title fw-bold pt-3 pb-2">Layanan 24 Jam</h5>
             <p class="card-text">Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu
             </p>
           </div>
         </div>
-        <div class="col-md-4 card low-shadow " data-aos="flip-left" data-aos-delay="700" data-aos-offset="300">
-          <div class="card-body">
-            <img src="./assets/icon/icon_professional.svg" />
+        <div class="col-md-4 card low-shadow p-0" data-aos="flip-left" data-aos-delay="600" data-aos-offset="300">
+          <div class="card-body card-body_green">
+            <img class="card-img" src="./assets/icon/icon_professional.svg" />
             <h5 class="card-title fw-bold pt-3 pb-2">Sopir Profesional</h5>
             <p class="card-text">Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
           </div>
@@ -205,14 +207,16 @@
         <div class="item">
           <div class="row">
             <div class="col-md-3 text-center my-auto">
-              <img src="assets/images/img_photo-1.svg" class="rounded-circle" alt="GambarPhoto1">
+              <img src="assets/images/img_photo-1.svg" class="testimonial-image testimonial-image rounded-circle" alt="GambarPhoto1">
             </div>
-            <div class="col-md">
-              <span class="star">&#9733;</span>
-              <span class="star">&#9733;</span>
-              <span class="star">&#9733;</span>
-              <span class="star">&#9733;</span>
-              <span class="star">&#9733;</span>
+            <div class="col-md d-flex flex-column align-center justify-content-center">
+              <div class="star">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+              </div>
               
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, incidunt odit? Exercitationem earum officia est. Dolore nobis totam quia dolores ad velit tempora accusamus maiores eligendi, illo quidem modi fugit.</p>
               <p class="user fw-bold">John Dee 32, Turen</p>
@@ -223,14 +227,16 @@
         <div class="item">
           <div class="row">
             <div class="col-md-3 text-center my-auto">
-              <img src="./assets/images/img_photo-2.svg" class="rounded-circle" alt="GambarPhoto2">
+              <img src="./assets/images/img_photo-2.svg" class="testimonial-image rounded-circle" alt="GambarPhoto2">
             </div>
-            <div class="col-md">
-              <span class="star">&#9733;</span>
-              <span class="star">&#9733;</span>
-              <span class="star">&#9733;</span>
-              <span class="star">&#9733;</span>
-              <span class="star">&#9733;</span>
+            <div class="col-md d-flex flex-column align-center justify-content-center">
+              <div class="star">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+              </div>
               
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, incidunt odit? Exercitationem earum officia est. Dolore nobis totam quia dolores ad velit tempora accusamus maiores eligendi, illo quidem modi fugit.</p>
               <p class="user fw-bold">John Dee 32, Sedayu</p>
@@ -241,14 +247,16 @@
         <div class="item">
           <div class="row">
             <div class="col-md-3 text-center my-auto">
-              <img src="./assets/images/img_photo-2.svg" class="rounded-circle" alt="GambarPhoto3">
+              <img src="./assets/images/img_photo-2.svg" class="testimonial-image rounded-circle" alt="GambarPhoto3">
             </div>
-            <div class="col-md">
-              <span class="star">&#9733;</span>
-              <span class="star">&#9733;</span>
-              <span class="star">&#9733;</span>
-              <span class="star">&#9733;</span>
-              <span class="star">&#9733;</span>
+            <div class="col-md d-flex flex-column align-center justify-content-center">
+              <div class="star">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+              </div>
               
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis necessitatibus aspernatur alias ab! Molestiae in dolores voluptates alias odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum.</p>
               <p class="user fw-bold">Handy, Malang</p>
