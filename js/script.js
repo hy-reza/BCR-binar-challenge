@@ -13,26 +13,20 @@ $(".owl-carousel").owlCarousel({
     paginationSpeed: 500,
     autoplayTimeout:3000,
     autoplayHoverPause:true,
-    // dots button false / tidak ditampilkan
     dots: false,
-    // mengsetting responsive owl-carousel
     responsive: {
-      // breakpoint dari 0 up
       0: {
         items: 1,
       },
-      // breakpoint dari 600 up
       600: {
         items: 2,
       },
-      // breakpoint dari 1000 up
       1000: {
         items: 2,
       },
     },
   });
   
-  // Script untuk button next / prev testimonial
   var owl = $(".owl-carousel");
   owl.owlCarousel();
   // Go to the next item
