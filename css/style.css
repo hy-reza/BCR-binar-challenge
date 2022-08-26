@@ -333,6 +333,10 @@ header {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .star{
+    text-align: center;
+  }
+
   .main{
     margin-bottom: 0px;
   }
@@ -365,6 +369,10 @@ header {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .star{
+    text-align: center;
+  }
+
   .hero-right {
     height: 350px;
   }
@@ -382,6 +390,10 @@ header {
 @media only screen and (min-width: 768px) {
   .offcanvas {
     width: 30%;
+  }
+
+  .star{
+    text-align: start;
   }
 
   .main{
