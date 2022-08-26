@@ -300,6 +300,13 @@ header {
   border: 1px solid black;
   background-color: transparent;
 }
+
+.testimonial .btn:hover{
+  color: white;
+  background-color: var(--limegreen-04)
+}
+
+
 /* cta section style */
 .cta {
   padding-top: 50px;
