@@ -1,1 +1,1 @@
-# Binar Rental Car
+<center> Binar Rental Car </center>
