@@ -359,6 +359,14 @@ header {
     padding-right: 50px;
   }
 
+  .whyus-title {
+    text-align: center;
+  }
+
+  .faq-title {
+    text-align: center;
+  }
+    
   .owl-item .item .row {
     height: 380px;
   }
@@ -370,6 +378,14 @@ header {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .star{
+    text-align: center;
+  }
+
+  .whyus-title {
+    text-align: center;
+  }
+
+  .faq-title {
     text-align: center;
   }
 
@@ -392,7 +408,15 @@ header {
     width: 30%;
   }
 
+  .whyus-title {
+    text-align: start;
+  }
+
   .star{
+    text-align: start;
+  }
+
+  .faq-title {
     text-align: start;
   }
 
