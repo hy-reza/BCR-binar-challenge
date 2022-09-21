@@ -1,11 +1,12 @@
 import http from 'http'
 
 
+const serverHandler = (req, res) => {
+  if (req.url){
+    res.end('ok')
+  }
+}
 
-const app = http.createServer((req, res) => {
-  res.end('ok')
-})
 
-app.listen(3000, ()=> {
-  console.info("server allready listen for requests on port 3000");
-})
+
+http.createServer(serverHandler).listen(3000, ()=> { console.info("server allready listen for requests on port 3000"); })
