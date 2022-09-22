@@ -107,6 +107,43 @@ header {
   width: 170px;
 }
 
+/* Cari Mobil */
+#cari-mobil {
+  margin-top: -105px;
+}
+
+#cm-search {
+  width: 80%;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+#cm-result {
+  width: 90%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 106px;
+}
+
+.cm-container {
+  width: 80%;
+}
+
+.cm-content {
+  max-width: 300px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.cm-content img {
+  align-self: center;
+  border-radius: 5px;
+}
+
+.cm-icon {
+  align-self: start !important;
+}
+
 /* services section style */
 .services {
   background-color: ffffff;
@@ -276,8 +313,6 @@ header {
 }
 
 .testimonial-image {
-  width: 400px;
-  height: 150px;
 }
 
 .owl-item .item .row {

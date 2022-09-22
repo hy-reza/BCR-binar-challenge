@@ -1,18 +1,17 @@
 import fs from 'fs';
 import mime from 'mime';
+import * as pth from 'path';
 
-export const serveHTML = (req, res, path) => {
-  const reqType = mime.getType(req.url)
-  res.writeHead(200, {'Content-Type' :  [`${reqType}`]})
-  fs.createReadStream(`./public/${path}`, 'utf-8').on('data', (chunk) => {
-    res.end(chunk)
-  })
-}
-
-export const serveX = (req, res, path) => {
+export default (req, res, path) => {
   const reqType = mime.getType(path)
-  console.log(reqType)
-  res.writeHead(200, {'Content-Type' :  `${reqType}`})
-  const file = fs.readFileSync(`./public/${path}`)
-  res.end(file)
+  let dir = pth.extname === '.json' ? './data/' : './public/'
+
+  try{
+    res.writeHead(200, {'Content-Type' :  `${reqType}`})
+    const file = fs.readFileSync(`${dir}${path}`)
+    res.end(file)
+  }catch (error) {
+    res.writeHead(400)
+    console.error(error.message);
+  }
 }
