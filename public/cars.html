@@ -7,7 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Binar Car Rental</title>
-
   <!-- STYLESHEET -->
 
   <!-- bootstrap css -->
@@ -33,7 +32,7 @@
     <!-- header navigation -->
     <nav class="navbar navbar-expand-lg">
       <div class="container-lg px-2">
-        <a class="navbar-bran low-shadow" href="#">
+        <a class="navbar-bran low-shadow" href="./">
           <span class="logo d-block"></span>
         </a>
         <!-- toggler button -->
@@ -90,9 +89,6 @@
           terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu
           untuk sewa mobil selama 24 jam.
         </p>
-        <button type="button" class="btn btn-cta btn-success mt-1 fw-bold">
-          Mulai Sewa Mobil
-        </button>
       </div>
       <div class="hero-right col-md-6 hero-right">
         <img src="./images/img_car.png" class="hero-img position-absolute " alt="car">
@@ -102,73 +98,56 @@
   </main>
   <!-- end of hero section -->
 
-<!-- Cari Mobil -->
-<div class="container-fluid cm-container" id="cari-mobil">
-  <div class="container card" id="cm-search">
-      <form id="cm-form">
-          <div class="row pb-3">
-              <div class="col">
-                  <p class="mb-2">Tipe Driver</p>
-                  <div class="input-group mb-3">
-                      <select class="form-select" id="list">
-                          <option hidden>Pilih Tipe Driver</option>
-                          <option value="true">Dengan Sopir</option>
-                          <option value="false">Tanpa Sopir (Lepas Kunci)</option>
-                      </select>
-                  </div>
-              </div>
-              <div class="col">
-                  <p class="mb-2">Tanggal</p>
-                  <div class="input-group mb-3">
-                      <input type="date" class="form-control" placeholder="Pilih Tanggal"
-                          aria-label="Pilih Tangggal" id="list2date">
-                  </div>
-              </div>
-              <div class="col">
-                  <p class="mb-2">Waktu Jemput/ Ambil</p>
-                  <div class="input-group mb-3">
-                      <select class="form-select" id="list3">
-                          <option hidden>Pilih Waktu</option>
-                          <option value="8">08:00 WIB</option>
-                          <option value="9">09:00 WIB</option>
-                          <option value="10">10:00 WIB</option>
-                          <option value="11">11:00 WIB</option>
-                          <option value="22">22:00 WIB</option>
-                      </select>
-                  </div>
-              </div>
-              <div class="col-3">
-                  <p class="mb-2">Jumlah Penumpang (Opsional)</p>
-                  <div class="input-group mb-3">
-                      <select class="form-select" id="list4">
-                          <option value="null">Jumlah Penumpang</option>
-                          <option value="1">1 orang</option>
-                          <option value="2">2 orang</option>
-                          <option value="3">3 orang</option>
-                          <option value="4">4 orang</option>
-                          <option value="5">5 orang</option>
-                          <option value="6">6 orang</option>
-                      </select>
-                  </div>
-              </div>
-              <div class="col-2" style="align-self: center; text-align-last: center; margin-top: 15px;">
-                  <button type="submit" class="btn btn-success text-white">Cari Mobil</button>
-              </div>
+<!-- Filter Car section -->
+<div class="container-fluid fc-container" id="cari-mobil">
+  <div class="container ">
+    <div class="card">
+      <div class="card-body">
+        <form name="fc-form">
+          <div class="row">
+            <div class="col-md-3">
+              <p class=" pt-1">Tipe Driver</p>
+              <select id="driver" name="tipe_driver" class="form-select">
+                <option value="">Pilih Driver</option>
+                <option value="dengan-supir">Dengan Supir</option>
+                <option value="lepas-kunci">Lepas kunci</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <p class=" pt-1">Tanggal</p>
+              <input type="date" name="tanggal" id="date" class="form-control" />
+            </div>
+            <div class="col-md-2">
+            <p class=" pt-1">Waktu Jemput/Ambil</p>
+            <input type="time" name="waktu_jemput" id="time" class="form-control" />
+            </div>
+            <div class="col-md-2">
+              <p class=" pt-1">Jumlah Penumpang</p>
+              <input type="number" name="jumlah_penumpang" id="qty" class="form-control" />
+            </div>
+            <div class="col-md-2 ">
+              <p>&nbsp;</p>
+              <button class="btn btn-success my-auto " name="fc-btn" id="fc-btn">
+                Cari Mobil
+              </button>
+              <button class="btn btn-outline-primary my-auto edit-btn" name="fc-btn" id="fc-btn-edit" style="border: 1px solid blue; width: 100px" hidden>
+                Edit
+              </button>
+            </div>
           </div>
-      </form>
-  </div>
-  <div class="container-fluid " id="cm-result">
-      <div class="row " id="cm-inputs">
-         
+        </form>
       </div>
-      <div class="row" id="cm-cards"></div>
+    </div>
   </div>
 </div>
 
+<div id="unavailable-car" class="container-sm mt-3 w-25 m-auto text-center"></div>
+<div id="cars-container" class="container d-flex flex-wrap justify-content-center" style="margin-bottom: 100px; margin-top: 100px;"></div>
 
-  
+
+
   <!-- footer -->
-  <footer class="container-fluid pt-5 mb-4" id="footer">
+  <footer class="container-fluid mb-4" id="footer">
     <div class="container-lg">
       <div class="row mt-5 ">
         <div class="col-md mb-2">
@@ -203,6 +182,13 @@
   <!-- end of footer -->
 
   <!-- JS SCRIPT -->
+
+  <!-- Main script -->
+  <script type="text/javascript" src="./scripts/binar.js"></script>
+  <script type="text/javascript" src="./scripts/app.js"></script>
+  <script type="text/javascript" src="./scripts/car.js"></script>
+  <script type="text/javascript" src="./scripts/main.js"></script>
+  <!-- end of Main script -->
 
   <!-- jquery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>

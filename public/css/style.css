@@ -112,35 +112,35 @@ header {
   margin-top: -105px;
 }
 
-#cm-search {
+#fc-search {
   width: 80%;
   padding: 20px;
   padding-bottom: 0px;
 }
 
-#cm-result {
+#fc-result {
   width: 90%;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-left: 106px;
 }
 
-.cm-container {
+.fc-container {
   width: 80%;
 }
 
-.cm-content {
+.fc-content {
   max-width: 300px;
   padding: 20px;
   margin-bottom: 30px;
 }
 
-.cm-content img {
+.fc-content img {
   align-self: center;
   border-radius: 5px;
 }
 
-.cm-icon {
+.fc-icon {
   align-self: start !important;
 }
 

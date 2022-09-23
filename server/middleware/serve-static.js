@@ -4,7 +4,7 @@ import * as pth from 'path';
 
 export default (req, res, path) => {
   const reqType = mime.getType(path)
-  let dir = pth.extname === '.json' ? './data/' : './public/'
+  let dir = pth.extname(path) === '.json' ? './data/' : './public/'
 
   try{
     res.writeHead(200, {'Content-Type' :  `${reqType}`})
