@@ -1,0 +1,20 @@
+{
+  "name": "binar-fsw-challenge-04",
+  "version": "1.0.0",
+  "description": "Project HTTP Server dan DOM",
+  "main": "server/app.js",
+  "author": "hy-reza",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server/app.js"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.2",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "mime": "^3.0.0"
+  }
+}
