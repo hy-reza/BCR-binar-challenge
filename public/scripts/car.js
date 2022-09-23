@@ -45,7 +45,7 @@ class Car {
   render() {
    
     return `
-      <div class="card mx-2 my-2" style="width: 25rem;">
+      <div class="card mx-3 my-3" style="width: 25rem;">
         <img src="${this.image}" class="img-fluid" alt="${this.manufacture}" style="object-fit:cover; height:250px;">
         <div class="card-body">
           <p class="card-text">${this.manufacture}/${this.model}</p>
